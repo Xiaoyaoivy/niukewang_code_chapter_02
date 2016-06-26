@@ -1,0 +1,32 @@
+<html>
+<link ref="stylesheet" type="text/css" href="/static/c2.css">
+<body>
+<h>head</h>
+<br>
+profile:{{uid}}<br>
+{# 看不到我~ #}
+{% for i in range(0,5): %}
+profile : i <br>
+{% endfor %}
+
+# for color in colors:
+{{color}}<br>
+# endfor
+
+{%for color in colors:%}
+22 {{color}}<br>
+{%endfor%}
+
+{%for color in colors:%}
+{{loop.index}} {{color}}<br>
+{%endfor%}
+
+{%filter upper%}
+{% for k,v in infos.items(): %}
+{{k}},{{v}}<br>
+{% endfor%}
+{%endfilter%}
+
+
+</body>
+</html>

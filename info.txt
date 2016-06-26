@@ -1,0 +1,8 @@
+log success
+asd
+asd
+errorasd
+warnasd
+infoasd
+infoasd
+log success
